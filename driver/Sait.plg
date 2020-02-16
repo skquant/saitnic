@@ -1,0 +1,63 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Sait - Win32 Checked--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"..\Debug/Sait.res" /i "c:\WINDDK\3790\inc\crt" /d "_DEBUG" /d "_WIN2K_COMPAT_SLIST_USAGE" /d "NDIS_MINIPORT_DRIVER" /d NDIS51_MINIPORT=1 /d NDIS_WDM=1 "C:\skkim\saitNic\Driver\Sait.rc"" 
+Creating temporary file "C:\DOCUME~1\KSK\LOCALS~1\Temp\RSP47.tmp" with contents
+[
+/nologo /Gz /ML /W3 /Zi /Oi /Gy /I "." /I "c:\WINDDK\3790\inc\wxp" /I "c:\WINDDK\3790\inc\crt" /I "c:\WINDDK\3790\inc\ddk\wxp" /I "c:\WINDDK\3790\inc\ddk\wdm\wxp" /FI"warning.h" /D _X86_=1 /D i386=1 /D "STD_CALL" /D CONDITION_HANDLING=1 /D NT_UP=1 /D NT_INST=0 /D WIN32=100 /D _NT1X_=100 /D WINNT=1 /D _WIN32_WINNT=0x0400 /D WIN32_LEAN_AND_MEAN=1 /D DEVL=1 /D DBG=1 /D FPO=0 /D _DLL=1 /D "_WIN2K_COMPAT_SLIST_USAGE" /D "NDIS_MINIPORT_DRIVER" /D NDIS51_MINIPORT=1 /D NDIS_WDM=1 /Fo"..\Debug/" /Fd"..\Debug\Sait.pdb" /Zel -cbstring /GF /c 
+"C:\skkim\saitNic\Driver\debug.c"
+"C:\skkim\saitNic\Driver\info.c"
+"C:\skkim\saitNic\Driver\ioctl.c"
+"C:\skkim\saitNic\Driver\receive.c"
+"C:\skkim\saitNic\Driver\Sait.c"
+"C:\skkim\saitNic\Driver\send.c"
+"C:\skkim\saitNic\Driver\usb.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\KSK\LOCALS~1\Temp\RSP47.tmp" 
+Creating temporary file "C:\DOCUME~1\KSK\LOCALS~1\Temp\RSP48.tmp" with contents
+[
+ntoskrnl.lib hal.lib wmilib.lib ntstrsafe.lib usbd.lib ndis.lib /nologo /base:"0x10000" /version:5.0 /stack:0x40000,0x1000 /entry:"DriverEntry" /incremental:no /pdb:"..\Debug/saitNic.pdb" /machine:IX86 /nodefaultlib /out:"..\Debug\saitNic.sys" /libpath:"c:\WINDDK\3790\lib\wxp\i386" /driver /MERGE:_PAGE=PAGE /MERGE:_TEXT=.text /SECTION:INIT,d /MERGE:.rdata=.text /FULLBUILD /RELEASE /OPT:REF /OPT:ICF /align:0x80 /osversion:5.00 /subsystem:native,1.10 /debug:FULL /ignore:4010,4037,4039,4065,4070,4078,4087,4089,4221,4210 
+\skkim\saitNic\Debug\debug.obj
+\skkim\saitNic\Debug\info.obj
+\skkim\saitNic\Debug\ioctl.obj
+\skkim\saitNic\Debug\receive.obj
+\skkim\saitNic\Debug\Sait.obj
+\skkim\saitNic\Debug\send.obj
+\skkim\saitNic\Debug\usb.obj
+\skkim\saitNic\Debug\Sait.res
+]
+Creating command line "link.exe @C:\DOCUME~1\KSK\LOCALS~1\Temp\RSP48.tmp"
+<h3>Output Window</h3>
+Compiling resources with DDK resource compiler...
+Compiling with DDK compiler...
+debug.c
+warning: using obsolete header file usbioctl.h
+info.c
+warning: using obsolete header file usbioctl.h
+ioctl.c
+warning: using obsolete header file usbioctl.h
+C:\skkim\saitNic\driver\ioctl.c(299) : warning C4002: too many actual parameters for macro 'UsbBuildVendorRequest'
+C:\skkim\saitNic\driver\ioctl.c(479) : warning C4002: too many actual parameters for macro 'UsbBuildVendorRequest'
+receive.c
+warning: using obsolete header file usbioctl.h
+Sait.c
+warning: using obsolete header file usbioctl.h
+send.c
+warning: using obsolete header file usbioctl.h
+usb.c
+warning: using obsolete header file usbioctl.h
+Generating Code...
+Linking with DDK linker...
+
+
+
+<h3>Results</h3>
+saitNic.sys - 0 error(s), 9 warning(s)
+</pre>
+</body>
+</html>
